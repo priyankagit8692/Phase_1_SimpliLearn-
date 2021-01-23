@@ -2,12 +2,12 @@ package com.simpli.Queue;
 
 import java.util.Collections;
 import java.util.LinkedList;
-import java.util.Queue;
+import java.util.Deque;
 public class QueueDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Queue<String> nameQueue = new LinkedList<>();
+		Deque<String> nameQueue = new LinkedList<>();
 		nameQueue.add("priyanka");
 		nameQueue.add("priya");
 		nameQueue.add("divya");
