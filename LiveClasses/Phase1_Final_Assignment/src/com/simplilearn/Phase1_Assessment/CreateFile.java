@@ -15,7 +15,6 @@ public class CreateFile extends FileOperation {
 
 	@Override
 	void fileOperation() {
-		
 		System.out.println("Enter the file name you want to create: ");
 		String inputFileName = scanner.next();
 		File file = new File(rootDirectory, inputFileName);
