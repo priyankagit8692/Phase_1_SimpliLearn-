@@ -12,8 +12,8 @@ public class ArithmeticCalculator {
 		in2 = sc.nextInt();
 		System.out.println("Enter the operation choice you want to perform:");
 		while(true) {
-			input = sc.nextInt();
-			switch(input) {
+			int choice = showMenu(sc);
+			switch(choice) {
 			case 1:
 				System.out.println("Sum is:"+ add(in1,in2));
 				break;
@@ -35,6 +35,16 @@ public class ArithmeticCalculator {
 		}	
 	}
 	
+	private static int showMenu(Scanner scanner) {
+		System.out.println();
+		System.out.println("Please enter an option:");
+		System.out.println("1. Press 1 : For Addition");
+		System.out.println("2. Press 2 : For Subtraction");
+		System.out.println("3. Press 3 : For Multiplication");
+		System.out.println("4. Press 4 : For Divition");
+		int choice = scanner.nextInt();
+		return choice;
+	}
 	public static int add(int in1, int in2) {
 		int sum = 0;
 		sum = in1 + in2;
